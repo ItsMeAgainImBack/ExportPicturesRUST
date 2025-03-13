@@ -1,0 +1,17 @@
+[package]
+name = "export_pictures"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.24", features = ["serde"] }
+dotenv = "0.15.0"
+eframe = "0.21.3"
+egui-toast = "0.6.0"
+serde = { version = "1.0.158", features = ["derive"] }
+tokio = { version = "1.27.0", features = ["full"] }
+sqlx = { version = "0.6.3", features = [  "runtime-async-std-native-tls", "postgres", "chrono" ] }
+tinyfiledialogs = "3.9.1"
+base64 = "0.21.0"
